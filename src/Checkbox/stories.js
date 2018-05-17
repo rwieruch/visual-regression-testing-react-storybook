@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
+import { Viewport } from '@storybook/addon-viewport';
 import Checkbox from './';
 
 class CheckboxStateful extends React.Component {
@@ -28,6 +29,32 @@ class CheckboxStateful extends React.Component {
 }
 
 storiesOf('Checkbox', module)
+  .add('with medium', () => {
+    const value = true;
+    const children = text('label', 'My Checkbox Label');
+    const onCheckboxChange = action('toggle');
+
+    return (
+      <Viewport name="medium">
+        <CheckboxStateful value={value} onCheckboxChange={onCheckboxChange}>
+          {children}
+        </CheckboxStateful>
+      </Viewport>
+    );
+  })
+  .add('with iphone6 Plus', () => {
+    const value = true;
+    const children = text('label', 'My Checkbox Label');
+    const onCheckboxChange = action('toggle');
+
+    return (
+      <Viewport name="iphone6p">
+        <CheckboxStateful value={value} onCheckboxChange={onCheckboxChange}>
+          {children}
+        </CheckboxStateful>
+      </Viewport>
+    );
+  })
   .add('with checked', () => {
     const value = true;
     const children = text('label', 'My Checkbox Label');
