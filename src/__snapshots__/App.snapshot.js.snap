@@ -28,3 +28,27 @@ exports[`Counter Snapshot renders 1`] = `
   1
 </p>
 `;
+
+exports[`Storyshots Checkbox with checked 1`] = `
+<label>
+  My Checkbox Label
+  :
+  <input
+    checked={true}
+    onChange={[Function]}
+    type="checkbox"
+  />
+</label>
+`;
+
+exports[`Storyshots Checkbox with unchecked 1`] = `
+<label>
+  My Checkbox Label
+  :
+  <input
+    checked={false}
+    onChange={[Function]}
+    type="checkbox"
+  />
+</label>
+`;
