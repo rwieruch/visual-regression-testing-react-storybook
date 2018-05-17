@@ -1,15 +1,13 @@
-# react-components-test-setup
+# visual-regression-testing-react-storybook
 
-[![Build Status](https://travis-ci.org/rwieruch/react-components-test-setup.svg?branch=master)](https://travis-ci.org/rwieruch/react-components-test-setup) [![Coverage Status](https://coveralls.io/repos/github/rwieruch/react-components-test-setup/badge.svg?branch=master)](https://coveralls.io/github/rwieruch/react-components-test-setup?branch=master)
+[![Build Status](https://travis-ci.org/rwieruch/visual-regression-testing-react-storybook.svg?branch=master)](https://travis-ci.org/rwieruch/visual-regression-testing-react-storybook) [![Coverage Status](https://coveralls.io/repos/github/rwieruch/visual-regression-testing-react-storybook/badge.svg?branch=master)](https://coveralls.io/github/rwieruch/visual-regression-testing-react-storybook?branch=master)
 
-A solid test setup for React components with Mocha, Chai, Sinon, Enzyme and Jest in a [Webpack/Babel/React](https://github.com/rwieruch/minimal-react-webpack-babel-setup) application.
-
-Read more about it: [React Testing Tutorial: Test Frameworks & Component Tests](https://www.robinwieruch.de/react-testing-tutorial/)
+A React application which implements visual regression tests by using Jest and React Storybook. Read more about it: [Visual Regression Testing and React Storybook: Test Frameworks & Component Tests](https://www.robinwieruch.de/visual-regression-testing-react-storybook/)
 
 ## Features
 
 * React 16
-* Webpack 3
+* Webpack 4
 * Babel
 * Staging ES Next Features
 * Hot Module Replacement
@@ -23,11 +21,25 @@ Read more about it: [React Testing Tutorial: Test Frameworks & Component Tests](
   * Snapshot Test (Jest) Watcher
   * Travis CI
   * Coveralls.io
+* Storybook
+  * Knobs
+  * Actions
+  * Storyshots
+  * Viewport
 
 ## Installation
 
-* `git clone git@github.com:rwieruch/react-components-test-setup.git`
-* cd react-components-test-setup
+* `git clone git@github.com:rwieruch/visual-regression-testing-react-storybook.git`
+* cd visual-regression-testing-react-storybook
 * npm install
 * npm start
 * visit `http://localhost:8080/`
+
+## Running Storybook
+
+* npm run storybook
+
+## Running Visual Regression Tests
+
+* npm run storybook
+* npm run test:snapshot
