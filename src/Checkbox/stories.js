@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { text, boolean } from '@storybook/addon-knobs';
 import Checkbox from './';
 
 class CheckboxStateful extends React.Component {
@@ -28,7 +29,7 @@ class CheckboxStateful extends React.Component {
 storiesOf('Checkbox', module)
   .add('with checked', () => {
     const value = true;
-    const children = 'My Checkbox Label';
+    const children = text('label', 'My Checkbox Label');
     const onCheckboxChange = () => {};
 
     return (
@@ -39,7 +40,7 @@ storiesOf('Checkbox', module)
   })
   .add('with unchecked', () => {
     const value = false;
-    const children = 'My Checkbox Label';
+    const children = text('label', 'My Checkbox Label');
     const onCheckboxChange = () => {};
 
     return (
