@@ -18,6 +18,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@storybook/addon-actions": "^4.0.0-alpha.6",
     "@storybook/addon-knobs": "^4.0.0-alpha.6",
     "@storybook/react": "^4.0.0-alpha.6",
     "babel-core": "^6.26.0",

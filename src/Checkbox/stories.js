@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text, boolean } from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
 import Checkbox from './';
 
 class CheckboxStateful extends React.Component {
@@ -11,7 +12,7 @@ class CheckboxStateful extends React.Component {
   onCheckboxChange = value => {
     this.setState({ value });
 
-    this.props.onCheckboxChange();
+    this.props.onCheckboxChange(value);
   };
 
   render() {
@@ -30,7 +31,7 @@ storiesOf('Checkbox', module)
   .add('with checked', () => {
     const value = true;
     const children = text('label', 'My Checkbox Label');
-    const onCheckboxChange = () => {};
+    const onCheckboxChange = action('toggle');
 
     return (
       <CheckboxStateful value={value} onCheckboxChange={onCheckboxChange}>
@@ -41,7 +42,7 @@ storiesOf('Checkbox', module)
   .add('with unchecked', () => {
     const value = false;
     const children = text('label', 'My Checkbox Label');
-    const onCheckboxChange = () => {};
+    const onCheckboxChange = action('toggle');
 
     return (
       <CheckboxStateful value={value} onCheckboxChange={onCheckboxChange}>
