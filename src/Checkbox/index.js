@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 
 class Checkbox extends Component {
-  handleChange = event => {
+  constructor(props) {
+    super(props);
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
     this.props.onCheckboxChange(event.target.checked);
   };
 

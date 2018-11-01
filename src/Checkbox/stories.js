@@ -6,11 +6,17 @@ import { Viewport } from '@storybook/addon-viewport';
 import Checkbox from './';
 
 class CheckboxStateful extends React.Component {
-  state = {
-    value: this.props.value,
-  };
+  constructor(props) {
+    super(props);
 
-  onCheckboxChange = value => {
+    this.state = {
+      value: this.props.value,
+    };
+
+    this.onCheckboxChange = this.onCheckboxChange.bind(this);
+  }
+
+  onCheckboxChange(value) {
     this.setState({ value });
 
     this.props.onCheckboxChange(value);

@@ -1,7 +1,11 @@
 {
   "presets": [
-    "env",
-    "react",
-    "stage-2"
-  ]
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "env": {
+    "test": {
+      "plugins": ["require-context-hook"]
+    }
+  }
 }

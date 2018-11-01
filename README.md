@@ -1,6 +1,6 @@
 # visual-regression-testing-react-storybook
 
-[![Slack](https://slack-the-road-to-learn-react.wieruch.com/badge.svg)](https://slack-the-road-to-learn-react.wieruch.com/)
+[![Build Status](https://travis-ci.org/rwieruch/visual-regression-testing-react-storybook.svg?branch=master)](https://travis-ci.org/rwieruch/visual-regression-testing-react-storybook) [![Slack](https://slack-the-road-to-learn-react.wieruch.com/badge.svg)](https://slack-the-road-to-learn-react.wieruch.com/)
 
 A React application which implements visual regression tests by using Jest and React Storybook. Read more about it: [Visual Regression Testing and React Storybook](https://www.robinwieruch.de/visual-regression-testing-react-storybook/)
 
