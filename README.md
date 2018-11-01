@@ -21,10 +21,11 @@ A React application which implements visual regression tests by using Jest and R
   * Snapshot Test (Jest) Watcher
   * Travis CI
   * Coveralls.io
-* Storybook
+* Storybook 4
   * Knobs
   * Actions
   * Storyshots
+  * Imageshots
   * Viewport
 
 ## Installation
