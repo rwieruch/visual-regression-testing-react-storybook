@@ -27,7 +27,7 @@
     "@storybook/addon-knobs": "^4.1.13",
     "@storybook/addon-storyshots": "^4.1.13",
     "@storybook/addon-storyshots-puppeteer": "^4.0.2",
-    "@storybook/addon-viewport": "^4.0.2",
+    "@storybook/addon-viewport": "^4.1.13",
     "@storybook/react": "^4.1.13",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
