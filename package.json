@@ -22,7 +22,7 @@
     "@babel/node": "^7.7.4",
     "@babel/preset-env": "^7.7.5",
     "@babel/preset-react": "^7.7.4",
-    "@babel/register": "^7.0.0",
+    "@babel/register": "^7.7.4",
     "@storybook/addon-actions": "^4.0.2",
     "@storybook/addon-knobs": "^4.0.2",
     "@storybook/addon-storyshots": "^4.0.2",
